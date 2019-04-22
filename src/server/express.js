@@ -1,9 +1,9 @@
-import express from "express"
-const server = express()
-import path from "path"
-
+const express = require("express");
+const path = require("path")
 const webpack = require("webpack")
 const config = require("../../config/webpack.local.js")
+
+const server = express()
 const compiler = webpack(config)
 
 const webpackDevMiddleware = require("webpack-dev-middleware")(
