@@ -1,0 +1,180 @@
+@import "sizes";
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+  /* padding */
+  .p-md-0 {
+    padding: $none;
+  }
+
+  .p-md-1 {
+    padding: $super-small;
+  }
+
+  .p-md-2 {
+    padding: $small;
+  }
+
+  .p-md-3 {
+    padding: $medium;
+  }
+
+  .p-md-4 {
+    padding: $big;
+  }
+
+  .p-md-5 {
+    padding: $super-big;
+  }
+
+  /* padding X */
+  .px-md-0 {
+    padding: 0 $none;
+  }
+
+  .px-md-1 {
+    padding: 0 $super-small;
+  }
+
+  .px-md-2 {
+    padding: 0 $small;
+  }
+
+  .px-md-3 {
+    padding: 0 $medium;
+  }
+
+  .px-md-4 {
+    padding: 0 $big;
+  }
+
+  .px-md-5 {
+    padding: 0 $super-big;
+  }
+
+  /* padding Y */
+  .py-md-0 {
+    padding: $none 0;
+  }
+
+  .py-md-1 {
+    padding: $super-small 0;
+  }
+
+  .py-md-2 {
+    padding: $small 0;
+  }
+
+  .py-md-3 {
+    padding: $medium 0;
+  }
+
+  .py-md-4 {
+    padding: $big 0;
+  }
+
+  .py-md-5 {
+    padding: $super-big 0;
+  }
+
+  /* padding TOP */
+  .pt-md-0 {
+    padding-top: $none;
+  }
+
+  .pt-md-1 {
+    padding-top: $super-small;
+  }
+
+  .pt-md-2 {
+    padding-top: $small;
+  }
+
+  .pt-md-3 {
+    padding-top: $medium;
+  }
+
+  .pt-md-4 {
+    padding-top: $big;
+  }
+
+  .pt-md-5 {
+    padding-top: $super-big;
+  }
+
+  /* padding RIGHT */
+  .pr-md-0 {
+    padding-right: $none;
+  }
+
+  .pr-md-1 {
+    padding-right: $super-small;
+  }
+
+  .pr-md-2 {
+    padding-right: $small;
+  }
+
+  .pr-md-3 {
+    padding-right: $medium;
+  }
+
+  .pr-md-4 {
+    padding-right: $big;
+  }
+
+  .pr-md-5 {
+    padding-right: $super-big;
+  }
+
+  /* padding BOTTOM*/
+
+  .pb-md-0 {
+    padding-bottom: $none;
+  }
+
+  .pb-md-1 {
+    padding-bottom: $super-small;
+  }
+
+  .pb-md-2 {
+    padding-bottom: $small;
+  }
+
+  .pb-md-3 {
+    padding-bottom: $medium;
+  }
+
+  .pb-md-4 {
+    padding-bottom: $big;
+  }
+
+  .pb-md-5 {
+    padding-bottom: $super-big;
+  }
+
+  /* padding LEFT */
+  .pl-md-0 {
+    padding-left: $none;
+  }
+
+  .pl-md-1 {
+    padding-left: $super-small;
+  }
+
+  .pl-md-2 {
+    padding-left: $small;
+  }
+
+  .pl-md-3 {
+    padding-left: $medium;
+  }
+
+  .pl-md-4 {
+    padding-left: $big;
+  }
+
+  .pl-md-5 {
+    padding-left: $super-big;
+  }
+}

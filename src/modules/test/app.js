@@ -1,10 +1,11 @@
-import Vue     from 'vue'
-import App     from './App.vue'
-import Counter from '../../shared/counter.vue'
-
-Vue.component(Counter.name, Counter);
+import Vue    from 'vue'
+import App    from './App.vue'
+import router from './router'
+import store  from './store'
 
 new Vue({
-    el: "#app",
-    render: h => h(App)
+  el: "#app",
+  router,
+  store,
+  render: h => h(App)
 })

@@ -31,10 +31,14 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: file => (
+                    /node_modules/.test(file) &&
+                    !/\.vue\.js/.test(file)
+                ),
                 use: [
                     {
-                        loader: "babel-loader"
+                        loader: "babel-loader",
+                        options: { presets: ["es2015"] }
                     }
                 ]
             },
@@ -42,9 +46,25 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: "style-loader"
+                        loader: "vue-style-loader"
                     },
-                    {loader: "css-loader"}
+                    {
+                        loader: "css-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    {
+                        loader:'vue-style-loader'
+                    },
+                    {
+                        loader:'css-loader'
+                    },
+                    {
+                        loader:'sass-loader',
+                    }
                 ]
             },
             {

@@ -1,0 +1,30 @@
+@import "./variables";
+
+body {
+  margin-top: 50px;
+  background-color: $default-bc-color;
+  min-width: $screen-min-width;
+  font-family: $default-font-family;
+  color: rgb(100, 100, 100);
+  font-weight: $default-font-weight;
+  font-size: $default-font-size;
+}
+
+.main-header {
+  min-width: $screen-min-width;
+}
+
+.bt-primary {
+  padding: $p5-20;
+  font-size: 10px;
+  color: white;
+  background-color: $main-color;
+}
+
+.bc-main {
+  background-color: $main-color;
+}
+
+.bc-white {
+  background-color: white;
+}

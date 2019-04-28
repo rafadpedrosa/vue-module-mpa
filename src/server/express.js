@@ -23,7 +23,8 @@ console.log("Middleware enabled")
 const staticMiddleware = express.static("dist")
 server.use(staticMiddleware)
 
-const PORT = 8000
+const PORT = 8090;
+
 server.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
 })

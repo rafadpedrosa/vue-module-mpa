@@ -1,21 +1,22 @@
 <template>
-    <div class="profile">
-        <img src="../images/link.jpg" alt="">
-        <h1>Link's Journal: {{ this.test }}</h1>
-        <counter></counter>
+    <div class="jdm-module">
+        <active-job-description-page></active-job-description-page>
     </div>
 </template>
 
 <script>
+    import ActiveJobs from '../modules/jdm/page/ActiveJobs.vue'
+
     export default {
+        name: 'main-content',
+        components: {
+            ActiveJobs
+        },
         data() {
-            return {
-                test: 'IRUUU!'
-            }
+            return {}
         }
     }
 </script>
 
-<style>
-
+<style lang="scss">
 </style>

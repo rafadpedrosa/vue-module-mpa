@@ -1,21 +1,22 @@
 <template>
-    <div class="profile">
-        <img src="../../images/link.jpg" alt="">
-        <h1>Link's Journal: {{ this.test }}</h1>
-        <counter></counter>
+    <div class="test-module">
+        <h1>{{ this.message }}</h1>
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                test: 'TEST FOLDER! JDM!!!'
-            }
-        }
+  export default {
+    name: 'main-content',
+    components: {},
+    data () {
+      return {}
+    },
+    computed: {
+      message () {
+        return this.$store.state.APP_NAME
+      }
     }
+  }
 </script>
 
-<style>
-
-</style>
+<style lang="scss"></style>

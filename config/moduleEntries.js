@@ -2,10 +2,10 @@ const { VueLoaderPlugin } = require("vue-loader")
 const HTMLWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-  test_module: {
+  test: {
     submodule: {
       name: "./src/modules/test/main.js",
-      _path: "modules/test/"
+      _path: "test/"
     }
   },
   commonConfig: {
@@ -31,10 +31,14 @@ module.exports = {
         },
         {
           test: /\.js$/,
-          exclude: /node_modules/,
+          exclude: file => (
+              /node_modules/.test(file) &&
+              !/\.vue\.js/.test(file)
+          ),
           use: [
             {
-              loader: "babel-loader"
+              loader: "babel-loader",
+              options: { presets: ["es2015"] }
             }
           ]
         },
@@ -42,9 +46,28 @@ module.exports = {
           test: /\.css$/,
           use: [
             {
-              loader: "style-loader"
+              loader: "vue-style-loader"
             },
-            { loader: "css-loader" }
+            {
+              loader: "css-loader"
+            }
+          ]
+        },
+        {
+          test: /\.scss$/,
+          use: [
+            {
+              loader:'vue-style-loader'
+            },
+            {
+              loader:'css-loader'
+            },
+            {
+              loader:'sass-loader',
+              options: {
+                data: `$red-color: black;`
+              }
+            }
           ]
         },
         {
@@ -53,7 +76,7 @@ module.exports = {
             {
               loader: "file-loader",
               options: {
-                name: "../../../images/[name].[ext]"
+                name: "./dist/images/[name].[ext]"
               }
             }
           ]
@@ -75,5 +98,5 @@ module.exports = {
       })
     ],
   },
-  outputFolder: "../dist/"
+  outputFolder: "../../web-app/js/dist/"
 }

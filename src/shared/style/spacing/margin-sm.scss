@@ -1,0 +1,180 @@
+@import "sizes";
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* margin */
+  .m-sm-0 {
+    margin: $none;
+  }
+
+  .m-sm-1 {
+    margin: $super-small;
+  }
+
+  .m-sm-2 {
+    margin: $small;
+  }
+
+  .m-sm-3 {
+    margin: $medium;
+  }
+
+  .m-sm-4 {
+    margin: $big;
+  }
+
+  .m-sm-5 {
+    margin: $super-big;
+  }
+
+  /* margin X */
+  .mx-sm-0 {
+    margin: 0 $none;
+  }
+
+  .mx-sm-1 {
+    margin: 0 $super-small;
+  }
+
+  .mx-sm-2 {
+    margin: 0 $small;
+  }
+
+  .mx-sm-3 {
+    margin: 0 $medium;
+  }
+
+  .mx-sm-4 {
+    margin: 0 $big;
+  }
+
+  .mx-sm-5 {
+    margin: 0 $super-big;
+  }
+
+  /* margin Y */
+  .my-sm-0 {
+    margin: $none 0;
+  }
+
+  .my-sm-1 {
+    margin: $super-small 0;
+  }
+
+  .my-sm-2 {
+    margin: $small 0;
+  }
+
+  .my-sm-3 {
+    margin: $medium 0;
+  }
+
+  .my-sm-4 {
+    margin: $big 0;
+  }
+
+  .my-sm-5 {
+    margin: $super-big 0;
+  }
+
+  /* margin TOP */
+  .mt-sm-0 {
+    margin-top: $none;
+  }
+
+  .mt-sm-1 {
+    margin-top: $super-small;
+  }
+
+  .mt-sm-2 {
+    margin-top: $small;
+  }
+
+  .mt-sm-3 {
+    margin-top: $medium;
+  }
+
+  .mt-sm-4 {
+    margin-top: $big;
+  }
+
+  .mt-sm-5 {
+    margin-top: $super-big;
+  }
+
+  /* margin RIGHT */
+  .mr-sm-0 {
+    margin-right: $none;
+  }
+
+  .mr-sm-1 {
+    margin-right: $super-small;
+  }
+
+  .mr-sm-2 {
+    margin-right: $small;
+  }
+
+  .mr-sm-3 {
+    margin-right: $medium;
+  }
+
+  .mr-sm-4 {
+    margin-right: $big;
+  }
+
+  .mr-sm-5 {
+    margin-right: $super-big;
+  }
+
+  /* margin BOTTOM*/
+
+  .mb-sm-0 {
+    margin-bottom: $none;
+  }
+
+  .mb-sm-1 {
+    margin-bottom: $super-small;
+  }
+
+  .mb-sm-2 {
+    margin-bottom: $small;
+  }
+
+  .mb-sm-3 {
+    margin-bottom: $medium;
+  }
+
+  .mb-sm-4 {
+    margin-bottom: $big;
+  }
+
+  .mb-sm-5 {
+    margin-bottom: $super-big;
+  }
+
+  /* margin LEFT */
+  .ml-sm-0 {
+    margin-left: $none;
+  }
+
+  .ml-sm-1 {
+    margin-left: $super-small;
+  }
+
+  .ml-sm-2 {
+    margin-left: $small;
+  }
+
+  .ml-sm-3 {
+    margin-left: $medium;
+  }
+
+  .ml-sm-4 {
+    margin-left: $big;
+  }
+
+  .ml-sm-5 {
+    margin-left: $super-big;
+  }
+}

@@ -1,4 +1,5 @@
-require("./main.css")
 require("../../images/link.jpg")
 require("./index.html")
+require("./main.scss")
+require("../../shared/filters/filters.js")
 require("./app.js")

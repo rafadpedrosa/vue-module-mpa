@@ -1,0 +1,12 @@
+// use this only if you are not using a css framework
+@import "../../shared/style/spacing/spacing.scss";
+@import "../../shared/style/colors.scss";
+@import "../../shared/style/_variables.scss";
+@import "./colors.scss";
+@import "../../shared/style/main.scss";
+
+#table_id_wrapper thead th {
+  border-bottom-color: $main-color;
+}
+
+
