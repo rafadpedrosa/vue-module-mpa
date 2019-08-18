@@ -2,10 +2,10 @@ const { VueLoaderPlugin } = require("vue-loader")
 const HTMLWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-  test: {
+  main: {
     submodule: {
-      name: "./src/modules/test/main.js",
-      _path: "test/"
+      name: "./src/modules/main/main.js",
+      _path: "main/"
     }
   },
   commonConfig: {
